@@ -168,10 +168,10 @@ void add_text_to_file(const char *filename)
         {
             break;
         }
-        fputs(input, outfile); // додаємо рядок до кінця файлу
+        fputs(input, outfile); 
     }
 
-    fclose(outfile); // закриваємо файл
+    fclose(outfile); 
 }
 
 void create_file(const char *filename)
@@ -245,17 +245,17 @@ void changeFile(const char* filename, const char* filename2){
             newWord = true;
 
         }
-        if (c == '.' || c == '!' || c == '?') { // если символ найден
-            outfile.put(c); // записываем найденный символ в выходной файл
-            outfile.put('\n'); // записываем символ перевода строки после найденного символа
+        if (c == '.' || c == '!' || c == '?') { 
+            outfile.put(c); 
+            outfile.put('\n'); 
         } else {
-            outfile.put(c); // записываем символ в выходной файл без изменений
+            outfile.put(c); 
         }
 
     }
 
-    fclose(file); // закрываем входной файл
-    outfile.close(); // закрываем выходной файл
+    fclose(file); 
+    outfile.close(); 
 
 
 }
